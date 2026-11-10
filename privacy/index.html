@@ -20,7 +20,7 @@
 <li>The photos you open, the edits you make (stored as a list of settings), the pictures the app computes from them (face landmarks, hair/skin/background masks, body pose) and your saved looks.</li>
 <li>Face landmarks, masks and pose are computed by AI models that run <strong>on the device</strong>. They are used only to apply the edits you choose (for example retouch, makeup, age filter, background change) and are never sent anywhere, never used to identify anyone, never used for advertising and never shared with us or any third party.</li>
 <li>These files live in the app's private storage, are excluded from Android backups and are deleted when you delete an edit in the app or uninstall it. Pictures you save go to your phone's gallery (Pictures/AI Face), where your own gallery and backup settings apply.</li>
-<li>The app opens photos through Android's system photo picker: it only sees the photos you pick, it has no access to the rest of your gallery.</li>
+<li>The app opens photos through Android's system photo picker (it only sees the photos you pick, it has no access to the rest of your gallery) or takes them with the in-app camera when you allow camera access.</li>
 </ul>
 
 <h2>Network communication</h2>
@@ -36,6 +36,7 @@
 <h2>Permissions</h2>
 <table>
 <tr><th>Permission</th><th>Why</th></tr>
+<tr><td>CAMERA</td><td>Only if you allow it: taking a photo inside the app. The picture is saved in the app's private storage and edited on the phone; it is never uploaded.</td></tr>
 <tr><td>INTERNET, ACCESS_NETWORK_STATE</td><td>Ads in the free version and Google Play purchases. Editing works offline.</td></tr>
 <tr><td>POST_NOTIFICATIONS</td><td>Only if you allow it: the reminder one day before a free trial ends.</td></tr>
 <tr><td>VIBRATE</td><td>Haptic feedback.</td></tr>
